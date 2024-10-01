@@ -15,15 +15,15 @@ public class UniqueWords
 	  
       for (int i = 0; i < list.size(); i++)
       {
-    	  boolean flag = false;
+    	  boolean falseFlag = false;
 		  first = list.get(i);
     	  for (int j = 0; j < list.size(); j++)
     	  {
     		  second = list.get(j);
     		  if(first.compareTo(second) == 0 && j != i)
-    			  flag = true;
+    			  falseFlag = true;
 		  }
-    	  if(flag)
+    	  if(falseFlag)
     		  continue;
     	  else
     		  count++;
